@@ -1,3 +1,14 @@
 apiVersion: v1
-entries: {}
-generated: "2022-02-23T22:43:20.205511753+01:00"
+entries:
+  real-estate-engine:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-02-23T22:53:32.547893153+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 55d1887295affdd396649c32e9cc8ed4414fc5dfc9c88588647cd76bd4e8c3a4
+    name: real-estate-engine
+    type: application
+    urls:
+    - real-estate-engine-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-02-23T22:53:32.542579119+01:00"
