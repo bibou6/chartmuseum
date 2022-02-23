@@ -9,6 +9,6 @@ entries:
     name: real-estate-engine
     type: application
     urls:
-    - real-estate-engine-0.1.0.tgz
+    - https://bibou6.github.io/chartmuseum/real-estate-engine-0.1.0.tgz
     version: 0.1.0
 generated: "2022-02-23T22:53:32.542579119+01:00"
