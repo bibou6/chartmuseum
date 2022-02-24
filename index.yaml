@@ -1,14 +1,23 @@
 apiVersion: v1
 entries:
-  real-estate:
+  real-estate-engine:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-24T22:42:16.428256229+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 965701cf83ef1f49b6fa93439b9f748f744093c3ddb37ddcc478a6f73009d00d
-    name: real-estate
+    created: "2022-02-24T22:52:28.178752342+01:00"
+    description: A backend server for real estate project
+    digest: e228521f0a12fc641b36dab08914ccf9d40fbdd1b7a7e209575eeecbb5776de1
+    name: real-estate-engine
     type: application
     urls:
-    - https://bibou6.github.io/real-estate-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-02-24T22:42:16.425119753+01:00"
+    - real-estate-engine-0.0.1.tgz
+    version: 0.0.1
+  real-estate-web-portal:
+  - apiVersion: v2
+    created: "2022-02-24T22:52:28.181166986+01:00"
+    description: A frontend angular app for real estate project
+    digest: ec617c3186d4a86ba4d4ac14261c75d28ca657ed45c128aee0c1e1e3dd8a6b71
+    name: real-estate-web-portal
+    type: application
+    urls:
+    - real-estate-web-portal-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-02-24T22:52:28.176089071+01:00"
