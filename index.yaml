@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   real-estate:
   - apiVersion: v2
-    created: "2022-02-24T22:59:31.194836879+01:00"
+    created: "2022-02-24T23:11:34.179211262+01:00"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -12,16 +12,20 @@ entries:
       name: real-estate-web-portal
       repository: https://bibou6.github.io/chartmuseum
       version: 0.0.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.1
     description: A Helm chart to deploy them all
-    digest: fee95b8e019670121ff99aba0b6be35138c9cea2e162fda5f128ee43a96b39fc
+    digest: 44e12cc0616ee6ed6f74c4b721d7af207c32c0222917d81e4e8414df1096c726
     name: real-estate
     type: application
     urls:
-    - real-estate-0.1.0.tgz
-    version: 0.1.0
+    - real-estate-0.0.1.tgz
+    version: 0.0.1
   real-estate-engine:
   - apiVersion: v2
-    created: "2022-02-24T22:59:31.197349418+01:00"
+    created: "2022-02-24T23:11:34.181745211+01:00"
     description: A backend server for real estate project
     digest: e228521f0a12fc641b36dab08914ccf9d40fbdd1b7a7e209575eeecbb5776de1
     name: real-estate-engine
@@ -31,7 +35,7 @@ entries:
     version: 0.0.1
   real-estate-web-portal:
   - apiVersion: v2
-    created: "2022-02-24T22:59:31.199889895+01:00"
+    created: "2022-02-24T23:11:34.184189607+01:00"
     description: A frontend angular app for real estate project
     digest: ec617c3186d4a86ba4d4ac14261c75d28ca657ed45c128aee0c1e1e3dd8a6b71
     name: real-estate-web-portal
@@ -39,4 +43,4 @@ entries:
     urls:
     - real-estate-web-portal-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-24T22:59:31.191861152+01:00"
+generated: "2022-02-24T23:11:34.172552306+01:00"
