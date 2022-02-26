@@ -2,22 +2,22 @@ apiVersion: v1
 entries:
   real-estate:
   - apiVersion: v2
-    created: "2022-02-26T23:44:51.770855053+01:00"
+    created: "2022-02-26T23:53:04.882662665+01:00"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
-      repository: https://bibou6.github.io/chartmuseum
+      repository: file://../real-estate-engine
       version: 0.0.1
     - condition: real-estate-web-portal.enabled
       name: real-estate-web-portal
-      repository: https://bibou6.github.io/chartmuseum
+      repository: file://../real-estate-web-portal
       version: 0.0.1
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.1.1
     description: A Helm chart to deploy them all
-    digest: dc685ee52a71e8aab6b6cf7bc39e88d30457fbeabd347abc2ad59884299e1cad
+    digest: 85bc406299512b96a58132449e06a6b62d907169e763665edf98d06431124cdf
     name: real-estate
     type: application
     urls:
@@ -26,9 +26,9 @@ entries:
   real-estate-engine:
   - apiVersion: v2
     appVersion: 0.0.3.1-SNAPSHOT
-    created: "2022-02-26T23:44:51.775338291+01:00"
+    created: "2022-02-26T23:53:04.88649432+01:00"
     description: A backend server for real estate project
-    digest: 1508ed55a5b3998b66766cd06b5b63fd41c70a7bbac5a2db9a25d4d07aff0a84
+    digest: 6c0406847bdb6fad0e5a61701f11b9cad789a4817122281b7a7122e58d206638
     name: real-estate-engine
     type: application
     urls:
@@ -36,12 +36,12 @@ entries:
     version: 0.0.1
   real-estate-web-portal:
   - apiVersion: v2
-    created: "2022-02-26T23:44:51.77937858+01:00"
+    created: "2022-02-26T23:53:04.890259811+01:00"
     description: A frontend angular app for real estate project
-    digest: 86e922ecc539bf5efdac2d4a529b95fce5c2107af0a81ae67e35765473ba2a2d
+    digest: d22ba2d411fb43bac63e63e4958173e096008176b0d44f3c7fa4d78e339c309a
     name: real-estate-web-portal
     type: application
     urls:
     - https://bibou6.github.io/chartmuseum/real-estate-web-portal-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-26T23:44:51.762215267+01:00"
+generated: "2022-02-26T23:53:04.873838632+01:00"
