@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 14.2.0
-    created: "2022-02-27T14:20:44.973167846+01:00"
+    created: "2022-02-27T14:32:28.633925913+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -13,7 +13,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 86a91ebca12a73fdb20d354b1552f6b99ff595473b4f774dbdc4351b42e9b772
+    digest: d1ce32c476f538451b3336eefbaaf6ac50500d10144d4b8a86a48d9aee5c8fc2
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -37,7 +37,7 @@ entries:
     version: 11.1.1
   real-estate:
   - apiVersion: v2
-    created: "2022-02-27T14:20:44.983019006+01:00"
+    created: "2022-02-27T14:32:28.64354024+01:00"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -55,7 +55,7 @@ entries:
       repository: file://../postgresql
       version: 11.1.1
     description: A Helm chart to deploy them all
-    digest: 18c1c40e149e7a24637fb9446e6186128114dc4da692312945ec565719b6a222
+    digest: b8d88ab0ef8a544ec958bbf58e654776d3aff937524e7011bea3f47b851eedef
     name: real-estate
     type: application
     urls:
@@ -64,9 +64,9 @@ entries:
   real-estate-engine:
   - apiVersion: v2
     appVersion: 0.0.3.1-SNAPSHOT
-    created: "2022-02-27T14:20:44.986637936+01:00"
+    created: "2022-02-27T14:32:28.647048763+01:00"
     description: A backend server for real estate project
-    digest: 9834ea44152c864b176eaa65f3fb752671af3aedb2dcf6f336906b996d428a61
+    digest: 7b2f8925a2efe7af3c643cda478fbbe33a2aad7ec8ab08542bf90ffd7b03629b
     name: real-estate-engine
     type: application
     urls:
@@ -74,9 +74,9 @@ entries:
     version: 0.0.1
   real-estate-routes:
   - apiVersion: v2
-    created: "2022-02-27T14:20:44.989858184+01:00"
+    created: "2022-02-27T14:32:28.650336689+01:00"
     description: A Helm chart real-estate routes
-    digest: 2e078ce60958a5e13d3671ef066afa2d4d075a693f212f07b2867021b81199e9
+    digest: 1c561af0b1c90665b64e040ecc2c52a8d7a173d1e8e373c50c5f338df4b3f547
     name: real-estate-routes
     type: application
     urls:
@@ -84,12 +84,12 @@ entries:
     version: 0.0.1
   real-estate-web-portal:
   - apiVersion: v2
-    created: "2022-02-27T14:20:44.993093595+01:00"
+    created: "2022-02-27T14:32:28.653771503+01:00"
     description: A frontend angular app for real estate project
-    digest: 2acfdec44e40ac9edbaac9835dfeb372e43170bc8ae0fdadd62760306eba6133
+    digest: 1a947cd5a38d73d67a814d0fabca26c490ba2cce3bb22e0d2b79141a3d259d2f
     name: real-estate-web-portal
     type: application
     urls:
     - https://bibou6.github.io/chartmuseum/real-estate-web-portal-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-27T14:20:44.966135908+01:00"
+generated: "2022-02-27T14:32:28.626599202+01:00"
