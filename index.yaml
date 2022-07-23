@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 14.2.0
-    created: "2022-07-13T23:00:45.086771496Z"
+    created: "2022-07-23T00:22:46.514050658Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -13,7 +13,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 095a58358c5ff255e8a36852e5de148a7770f92de9aa7bf6ff5a7e82ba91beb6
+    digest: 02c707ff47583e269236b23fe18923ce05f65f9f106452f153d9334fd4fabe70
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -37,7 +37,29 @@ entries:
     version: 11.1.1
   real-estate:
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.185891697Z"
+    created: "2022-07-23T00:22:46.621970763Z"
+    dependencies:
+    - condition: real-estate-engine.enabled
+      name: real-estate-engine
+      repository: file://../real-estate-engine
+      version: 2.2.0
+    - condition: real-estate-web-portal.enabled
+      name: real-estate-web-portal
+      repository: file://../real-estate-web-portal
+      version: 3.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: file://../postgresql
+      version: 11.1.1
+    description: A Helm chart to deploy them all
+    digest: 0f67004edf5a053268a95244f895cec8f95f08eb8765b479b6368d06fa3fc0a4
+    name: real-estate
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/real-estate-2.2.0.tgz
+    version: 2.2.0
+  - apiVersion: v2
+    created: "2022-07-23T00:22:46.616549963Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -59,7 +81,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-2.1.0.tgz
     version: 2.1.0
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.179276803Z"
+    created: "2022-07-23T00:22:46.609350862Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -81,7 +103,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-2.0.2.tgz
     version: 2.0.2
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.174016229Z"
+    created: "2022-07-23T00:22:46.603979762Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -103,7 +125,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.168765855Z"
+    created: "2022-07-23T00:22:46.598334762Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -125,7 +147,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.162192462Z"
+    created: "2022-07-23T00:22:46.591967862Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -147,7 +169,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.156978088Z"
+    created: "2022-07-23T00:22:46.586519661Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -169,7 +191,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.150421196Z"
+    created: "2022-07-23T00:22:46.579881661Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -191,7 +213,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.145206922Z"
+    created: "2022-07-23T00:22:46.574568861Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -213,7 +235,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.0.5.tgz
     version: 1.0.5
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.139915747Z"
+    created: "2022-07-23T00:22:46.568602961Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -235,7 +257,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.0.4.tgz
     version: 1.0.4
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.133295454Z"
+    created: "2022-07-23T00:22:46.56277316Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -257,7 +279,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.12806318Z"
+    created: "2022-07-23T00:22:46.55737876Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -279,7 +301,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.121657989Z"
+    created: "2022-07-23T00:22:46.55082816Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -301,7 +323,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.116515817Z"
+    created: "2022-07-23T00:22:46.54547906Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -323,7 +345,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.111334443Z"
+    created: "2022-07-23T00:22:46.539074559Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -345,7 +367,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-0.0.5.tgz
     version: 0.0.5
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.10474685Z"
+    created: "2022-07-23T00:22:46.533717759Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -367,7 +389,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-0.0.3.tgz
     version: 0.0.3
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.099504776Z"
+    created: "2022-07-23T00:22:46.528378659Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -389,7 +411,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.09271648Z"
+    created: "2022-07-23T00:22:46.519384959Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -412,8 +434,18 @@ entries:
     version: 0.0.1
   real-estate-engine:
   - apiVersion: v2
+    appVersion: 2.2.0
+    created: "2022-07-23T00:22:46.638551764Z"
+    description: A Helm chart for Kubernetes
+    digest: e18dfa35aa290da4b4a91f59096bf7211231621943fcd8e3d0028caf1d84cbf7
+    name: real-estate-engine
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/real-estate-engine-2.2.0.tgz
+    version: 2.2.0
+  - apiVersion: v2
     appVersion: 2.1.0
-    created: "2022-07-13T23:00:45.197226457Z"
+    created: "2022-07-23T00:22:46.638045664Z"
     description: A Helm chart for Kubernetes
     digest: 1c047b84bfe9171b85cb3a240890bff54891918f602976b400cca489a6f6ff9a
     name: real-estate-engine
@@ -423,7 +455,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: 2.0.2
-    created: "2022-07-13T23:00:45.196514547Z"
+    created: "2022-07-23T00:22:46.637554264Z"
     description: A Helm chart for Kubernetes
     digest: cd6e791a12bac3be5db8bb4d40c783c775f12173d927d3e1a26e144c4998299f
     name: real-estate-engine
@@ -433,7 +465,7 @@ entries:
     version: 2.0.2
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2022-07-13T23:00:45.195815637Z"
+    created: "2022-07-23T00:22:46.637039563Z"
     description: A Helm chart for Kubernetes
     digest: 6b2c724c971d9fdd6c6d7cf6c80cb93d007862ad750fc63605b672e6d655946f
     name: real-estate-engine
@@ -443,7 +475,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-13T23:00:45.195021526Z"
+    created: "2022-07-23T00:22:46.636540663Z"
     description: A Helm chart for Kubernetes
     digest: cb9f31552dda264844fb68ba73ebb1b338c25c0753453d23eb3f67b4c9288271
     name: real-estate-engine
@@ -453,7 +485,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2022-07-13T23:00:45.194154713Z"
+    created: "2022-07-23T00:22:46.636034963Z"
     description: A Helm chart for Kubernetes
     digest: d6785b04daa748ea584d8eb00b92ba566a619359b9a2c7dbf8c1762728b2f777
     name: real-estate-engine
@@ -463,7 +495,7 @@ entries:
     version: 1.2.2
   - apiVersion: v2
     appVersion: 1.2.1
-    created: "2022-07-13T23:00:45.193620606Z"
+    created: "2022-07-23T00:22:46.635529563Z"
     description: A Helm chart for Kubernetes
     digest: 71cb14a6d7f6bd39d841efb5a11e8a9dffd5b51c1aa44e5d48e809ea1f336862
     name: real-estate-engine
@@ -473,7 +505,7 @@ entries:
     version: 1.2.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-07-13T23:00:45.193059498Z"
+    created: "2022-07-23T00:22:46.635034163Z"
     description: A Helm chart for Kubernetes
     digest: e33ac6426ede164f5c592fb577c1ad9105bc3f3922a97a45ced6cb55eb384773
     name: real-estate-engine
@@ -483,7 +515,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2022-07-13T23:00:45.19249209Z"
+    created: "2022-07-23T00:22:46.634526063Z"
     description: A Helm chart for Kubernetes
     digest: 77e6aab955802d6f107bf64246f504795c674d8af7254abc3ebf8b6431a2edc5
     name: real-estate-engine
@@ -493,7 +525,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.0.6
-    created: "2022-07-13T23:00:45.191951882Z"
+    created: "2022-07-23T00:22:46.634012263Z"
     description: A Helm chart for Kubernetes
     digest: f417b490fdcfcf8d5e0bdc77b428e7795e8da813972c42d928f9c2d6bb5f047a
     name: real-estate-engine
@@ -503,7 +535,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2022-07-13T23:00:45.191393174Z"
+    created: "2022-07-23T00:22:46.633274863Z"
     description: A Helm chart for Kubernetes
     digest: f8704487d4df0af96bf3438fbcdc91ef1256ff84192fa987f0382c9a5dde5390
     name: real-estate-engine
@@ -513,7 +545,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2022-07-13T23:00:45.190845967Z"
+    created: "2022-07-23T00:22:46.632460363Z"
     description: A Helm chart for Kubernetes
     digest: e10fb78e94b4746dcd2531f5448b9dc19fc32b7c50708ebc9201c71ad07e0419
     name: real-estate-engine
@@ -523,7 +555,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2022-07-13T23:00:45.190307259Z"
+    created: "2022-07-23T00:22:46.631631163Z"
     description: A Helm chart for Kubernetes
     digest: fb464460903ff95444c50b727edd3d7284d7ff30f9de7375113e48f30f3b48d3
     name: real-estate-engine
@@ -533,7 +565,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-07-13T23:00:45.189767752Z"
+    created: "2022-07-23T00:22:46.625513563Z"
     description: A Helm chart for Kubernetes
     digest: 23ee8f5e757a2289435ab124af686c225fb446974b002e0f8236a6748e4df582
     name: real-estate-engine
@@ -543,7 +575,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2022-07-13T23:00:45.189224244Z"
+    created: "2022-07-23T00:22:46.624993663Z"
     description: A Helm chart for Kubernetes
     digest: 17ecc0f67ba7f77f3a3182ec6f28117cc65f7dc28edff7b46915c6d6fe91865a
     name: real-estate-engine
@@ -553,7 +585,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-07-13T23:00:45.188690136Z"
+    created: "2022-07-23T00:22:46.624507463Z"
     description: A Helm chart for Kubernetes
     digest: 47df21969eff14833bb63451904b47a4d8296c68fd4b294e6219ba6a47987bd7
     name: real-estate-engine
@@ -563,7 +595,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2022-07-13T23:00:45.188155329Z"
+    created: "2022-07-23T00:22:46.624020263Z"
     description: A Helm chart for Kubernetes
     digest: a469a7a09c0261de372df5173faf277a2aa027274074d54837e5160967795104
     name: real-estate-engine
@@ -573,7 +605,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.5-SNAPSHOT
-    created: "2022-07-13T23:00:45.187640721Z"
+    created: "2022-07-23T00:22:46.623516763Z"
     description: A Helm chart for Kubernetes
     digest: 6f0969c02885130d21521fc22d060c4ed7450bb944ada1814d353aa1a3b3286f
     name: real-estate-engine
@@ -583,7 +615,7 @@ entries:
     version: 0.0.5-SNAPSHOT
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2022-07-13T23:00:45.187087714Z"
+    created: "2022-07-23T00:22:46.623018663Z"
     description: A Helm chart for Kubernetes
     digest: b766ec194557e6a26268c0f200bcc56829f351db5436699056650aa41ad61f42
     name: real-estate-engine
@@ -593,7 +625,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-13T23:00:45.186492605Z"
+    created: "2022-07-23T00:22:46.622517163Z"
     description: A Helm chart for Kubernetes
     digest: 7ad3e1f56cb5227f4b75e395adabf1e3ca5a35009c6b67de6a67afe0f5695cce
     name: real-estate-engine
@@ -603,7 +635,7 @@ entries:
     version: 0.0.1
   real-estate-routes:
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.197936867Z"
+    created: "2022-07-23T00:22:46.638926164Z"
     description: A Helm chart real-estate routes
     digest: d1d4bbf798a5cb1531eafd1521be03573e74d4a640848c4d831ed27eacaa1090
     name: real-estate-routes
@@ -613,8 +645,18 @@ entries:
     version: 0.0.1
   real-estate-web-portal:
   - apiVersion: v2
+    appVersion: 3.2.0
+    created: "2022-07-23T00:22:46.647964664Z"
+    description: A frontend angular app for real estate project
+    digest: 0f49b1fec54c2cf455f6aee67a20786880a42ae5b4c46941c1302ba4792510ac
+    name: real-estate-web-portal
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/real-estate-web-portal-3.2.0.tgz
+    version: 3.2.0
+  - apiVersion: v2
     appVersion: 3.1.0
-    created: "2022-07-13T23:00:45.206023981Z"
+    created: "2022-07-23T00:22:46.647536064Z"
     description: A frontend angular app for real estate project
     digest: 38185e1108dd6f6ee0bf5f7760870d28cc3cc6a74598ff0df9900e7925333e13
     name: real-estate-web-portal
@@ -624,7 +666,7 @@ entries:
     version: 3.1.0
   - apiVersion: v2
     appVersion: 3.0.2
-    created: "2022-07-13T23:00:45.205556275Z"
+    created: "2022-07-23T00:22:46.647100664Z"
     description: A frontend angular app for real estate project
     digest: 4dd1156de8e3ac8e24780d061be7c42742151d9ff4a17ac0ba452d1e420563c5
     name: real-estate-web-portal
@@ -634,7 +676,7 @@ entries:
     version: 3.0.2
   - apiVersion: v2
     appVersion: 3.0.1
-    created: "2022-07-13T23:00:45.205081068Z"
+    created: "2022-07-23T00:22:46.646665264Z"
     description: A frontend angular app for real estate project
     digest: 6a9498d116fcbb20a263bed64f701a5629ae5d6152c7c3181991365e6edbad0d
     name: real-estate-web-portal
@@ -644,7 +686,7 @@ entries:
     version: 3.0.1
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2022-07-13T23:00:45.204607461Z"
+    created: "2022-07-23T00:22:46.646218864Z"
     description: A frontend angular app for real estate project
     digest: 88dedec0388cd5fc7db2cd8f750de553dfe78d3c73bb22f91bf5e95fce271ca4
     name: real-estate-web-portal
@@ -654,7 +696,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 2.1.2
-    created: "2022-07-13T23:00:45.204143755Z"
+    created: "2022-07-23T00:22:46.645725664Z"
     description: A frontend angular app for real estate project
     digest: 28dbbb7c97f363513087fe5a27a949125176a48e320883dcc941002c4c168e31
     name: real-estate-web-portal
@@ -664,7 +706,7 @@ entries:
     version: 2.1.2
   - apiVersion: v2
     appVersion: 2.1.1
-    created: "2022-07-13T23:00:45.203679948Z"
+    created: "2022-07-23T00:22:46.645198964Z"
     description: A frontend angular app for real estate project
     digest: 60257893ac6534f7822d68b1590bda7989fcc8a888ef404bc06f4a39a29de318
     name: real-estate-web-portal
@@ -674,7 +716,7 @@ entries:
     version: 2.1.1
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2022-07-13T23:00:45.203198441Z"
+    created: "2022-07-23T00:22:46.644427564Z"
     description: A frontend angular app for real estate project
     digest: 85210f86641fed634d85e97463f58c641ed2250f873f5a7fdcd0635062213af4
     name: real-estate-web-portal
@@ -684,7 +726,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: 2.0.5
-    created: "2022-07-13T23:00:45.202724635Z"
+    created: "2022-07-23T00:22:46.643842664Z"
     description: A frontend angular app for real estate project
     digest: 5da5abbd50eba64f4c15f33dedf821a9975edee270d544cf1acfc61c2ae862bd
     name: real-estate-web-portal
@@ -694,7 +736,7 @@ entries:
     version: 2.0.5
   - apiVersion: v2
     appVersion: 2.0.4
-    created: "2022-07-13T23:00:45.202195827Z"
+    created: "2022-07-23T00:22:46.643242764Z"
     description: A frontend angular app for real estate project
     digest: fcb9a9af12bb43d39fa1b54e91b593d7a0cc16271668853cee2268338f9b1d2e
     name: real-estate-web-portal
@@ -704,7 +746,7 @@ entries:
     version: 2.0.4
   - apiVersion: v2
     appVersion: 2.0.3
-    created: "2022-07-13T23:00:45.201730321Z"
+    created: "2022-07-23T00:22:46.642360264Z"
     description: A frontend angular app for real estate project
     digest: 06ecd4209b687141655443e7015e3a6d1ad95527d80299728a13ad9e5bdf9f90
     name: real-estate-web-portal
@@ -714,7 +756,7 @@ entries:
     version: 2.0.3
   - apiVersion: v2
     appVersion: 2.0.2
-    created: "2022-07-13T23:00:45.201244114Z"
+    created: "2022-07-23T00:22:46.641940364Z"
     description: A frontend angular app for real estate project
     digest: a47a40c583b21d0d4bb52bd3b2abac57780edd6cefca5525590a07d964fd421b
     name: real-estate-web-portal
@@ -724,7 +766,7 @@ entries:
     version: 2.0.2
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2022-07-13T23:00:45.200762507Z"
+    created: "2022-07-23T00:22:46.641505364Z"
     description: A frontend angular app for real estate project
     digest: dc5652708b608ed5060eda8f9f7bfc488ad697187121ecc8002dee99e507eb95
     name: real-estate-web-portal
@@ -734,7 +776,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-13T23:00:45.2003025Z"
+    created: "2022-07-23T00:22:46.641052564Z"
     description: A frontend angular app for real estate project
     digest: 9be2a1d32a0e7fb26c9076c84aefab94b45e6bb0a70d652e027309c09b6010e4
     name: real-estate-web-portal
@@ -744,7 +786,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.0.6
-    created: "2022-07-13T23:00:45.199836094Z"
+    created: "2022-07-23T00:22:46.640630364Z"
     description: A frontend angular app for real estate project
     digest: 789c3dab538a7f1ee3c4c67f2f785df8cff9aad96b9349e98c8cc29addcad5b7
     name: real-estate-web-portal
@@ -754,7 +796,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2022-07-13T23:00:45.199374687Z"
+    created: "2022-07-23T00:22:46.640214264Z"
     description: A frontend angular app for real estate project
     digest: 5aa589e24ca32fc6a045ee4ee8371aa613d54eb192cafff4b5d869ddc34bf5b4
     name: real-estate-web-portal
@@ -764,7 +806,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2022-07-13T23:00:45.19889068Z"
+    created: "2022-07-23T00:22:46.639794664Z"
     description: A frontend angular app for real estate project
     digest: 44c5a5c582668f7be83b1967c2bba399fa42dfa4fc3d89488865554f299ad223
     name: real-estate-web-portal
@@ -773,7 +815,7 @@ entries:
     - https://bibou6.github.io/chartmuseum/real-estate-web-portal-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v2
-    created: "2022-07-13T23:00:45.198432274Z"
+    created: "2022-07-23T00:22:46.639362264Z"
     description: A frontend angular app for real estate project
     digest: 1c9219763168ff38d194df47333efe5f70e62c6e9a33f4105dc3121af883e626
     name: real-estate-web-portal
@@ -781,4 +823,4 @@ entries:
     urls:
     - https://bibou6.github.io/chartmuseum/real-estate-web-portal-0.0.1.tgz
     version: 0.0.1
-generated: "2022-07-13T23:00:45.081739025Z"
+generated: "2022-07-23T00:22:46.508250258Z"
