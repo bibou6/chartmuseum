@@ -3,9 +3,9 @@ entries:
   el-front-guides:
   - apiVersion: v2
     appVersion: 6.3.0
-    created: "2023-11-02T20:39:56.610533222Z"
+    created: "2023-11-02T21:16:03.930245947Z"
     description: A frontend angular app for real estate guides
-    digest: f1f9bfcce5a046b164a42df8278421cbd0ffdfef0b3e29c8f65a349bf20137a7
+    digest: b2fe1fcef42a9f352695552afd02cf740f3d4d46728a744f36b1849ef90f3eb9
     name: el-front-guides
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   el-front-management:
   - apiVersion: v2
     appVersion: 6.3.0
-    created: "2023-11-02T20:39:56.611017629Z"
+    created: "2023-11-02T21:16:03.930709656Z"
     description: A frontend angular app for real estate project
-    digest: 4cd8c93bac2089d57f14bea8c110ddab5d40c4322683261d44c881a5ccbfda34
+    digest: 4960f3d93dc29412f7b7739d042c0bacaf91bab19be700110a851fe2246a3d8f
     name: el-front-management
     type: application
     urls:
@@ -27,7 +27,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 14.2.0
-    created: "2023-11-02T20:39:56.617124015Z"
+    created: "2023-11-02T21:16:03.936648669Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +35,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: b5544c309bc4bd014dfb24b9d1cb052a5e114095473c99b8ea3f9586efdcfe29
+    digest: 9bd819c65d7189dcc561743bc4d457cc4af983ffbdd4c3065d4e173179f333bb
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -59,7 +59,7 @@ entries:
     version: 11.1.1
   real-estate:
   - apiVersion: v2
-    created: "2023-11-02T20:39:56.622836196Z"
+    created: "2023-11-02T21:16:03.942350078Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
@@ -78,7 +78,7 @@ entries:
       repository: file://../postgresql
       version: 11.1.1
     description: A Helm chart to deploy them all
-    digest: 07f30d3c1853e4c0f3e95626cac9ea2f1ceab03c9776c93de1666d252eafb842
+    digest: 59959c170c2686c804216fc961cabb5c33b4d1fe60eb0af4901938ce8717f374
     name: real-estate
     type: application
     urls:
@@ -87,12 +87,12 @@ entries:
   real-estate-engine:
   - apiVersion: v2
     appVersion: 5.3.0
-    created: "2023-11-02T20:39:56.623371604Z"
+    created: "2023-11-02T21:16:03.942898188Z"
     description: A Helm chart for Kubernetes
-    digest: 1f9cd8a46cc93b7e69b60385ced38035612e56de6e874954365eb798f62ad40b
+    digest: 24cc3a7d1dff7e9bc12566896e80e2f875ce26cd58eb6093a5aaed96f00854a2
     name: real-estate-engine
     type: application
     urls:
     - https://bibou6.github.io/chartmuseum/real-estate-engine-5.3.0.tgz
     version: 5.3.0
-generated: "2023-11-02T20:39:56.609831412Z"
+generated: "2023-11-02T21:16:03.929577634Z"
