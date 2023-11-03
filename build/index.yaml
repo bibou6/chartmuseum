@@ -1,0 +1,98 @@
+apiVersion: v1
+entries:
+  el-front-guides:
+  - apiVersion: v2
+    appVersion: 6.4.0
+    created: "2023-11-03T11:29:57.599181868Z"
+    description: A frontend angular app for real estate guides
+    digest: 8e3ca90467d1bef3359e38101c30bcd0864d89063ba457c90731a3ef68aee00d
+    name: el-front-guides
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/el-front-guides-6.4.0.tgz
+    version: 6.4.0
+  el-front-management:
+  - apiVersion: v2
+    appVersion: 6.4.0
+    created: "2023-11-03T11:29:57.599669078Z"
+    description: A frontend angular app for real estate project
+    digest: ec3ece94e58a5c7b8813952442ffd9cf072802bd4da1bb066c04c01a71a94fac
+    name: el-front-management
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/el-front-management-6.4.0.tgz
+    version: 6.4.0
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 14.2.0
+    created: "2023-11-03T11:29:57.603990665Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: eb38fd08b2d6bd4c7610cf61d688f63a66fbec9bbe0dd279ea99f6239afd59c4
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://bibou6.github.io/chartmuseum/postgresql-11.1.1.tgz
+    version: 11.1.1
+  real-estate:
+  - apiVersion: v2
+    created: "2023-11-03T11:29:57.611255411Z"
+    dependencies:
+    - condition: real-estate-engine.enabled
+      name: real-estate-engine
+      repository: file://../real-estate-engine
+      version: 5.4.0
+    - condition: el-front-management.enabled
+      name: el-front-management
+      repository: file://../el-front-management
+      version: 6.4.0
+    - condition: el-front-guides.enabled
+      name: el-front-guides
+      repository: file://../el-front-guides
+      version: 6.4.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: file://../postgresql
+      version: 11.1.1
+    description: A Helm chart to deploy them all
+    digest: a64a0d08c14d87f149891602b0277d31f54260405adff35d48206f6c73f68fb1
+    name: real-estate
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/real-estate-5.4.0.tgz
+    version: 5.4.0
+  real-estate-engine:
+  - apiVersion: v2
+    appVersion: 5.4.0
+    created: "2023-11-03T11:29:57.611802622Z"
+    description: A Helm chart for Kubernetes
+    digest: 42e6ab74f5f3a84f1a610a5358590f171e621a9af48fea050b2e5319a13deb43
+    name: real-estate-engine
+    type: application
+    urls:
+    - https://bibou6.github.io/chartmuseum/real-estate-engine-5.4.0.tgz
+    version: 5.4.0
+generated: "2023-11-03T11:29:57.598459354Z"
