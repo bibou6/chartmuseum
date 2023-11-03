@@ -1,3 +1,7 @@
+name: publish current version to gh-pages
+
+on: push
+
 jobs:
   deploy:
     name: Deploy
