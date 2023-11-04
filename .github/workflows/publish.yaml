@@ -1,0 +1,20 @@
+name: publish current version to gh-pages
+
+on: push
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      # Any prerequisite steps
+      - uses: actions/checkout@v2
+
+      # Deploy to local repo
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          FOLDER: "build"
+          BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
