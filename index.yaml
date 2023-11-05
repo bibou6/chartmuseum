@@ -2,32 +2,32 @@ apiVersion: v1
 entries:
   el-front-guides:
   - apiVersion: v2
-    appVersion: 6.5.9
-    created: "2023-11-04T20:01:12.769309208Z"
+    appVersion: 6.6.0
+    created: "2023-11-05T15:30:51.684110356Z"
     description: A frontend angular app for real estate guides
-    digest: 19caee1e8d53bcb8ba54dd29e6e6cd4970e22555b378308a51253b9688c294cc
+    digest: fa274a9db88c67d2091a03c6659d955321e7a3a81bd2f3531cc7fb219cdcb65c
     name: el-front-guides
     type: application
     urls:
-    - https://bibou6.github.io/chartmuseum/el-front-guides-6.5.9.tgz
-    version: 6.5.9
+    - https://bibou6.github.io/chartmuseum/el-front-guides-6.6.0.tgz
+    version: 6.6.0
   el-front-management:
   - apiVersion: v2
-    appVersion: 6.5.9
-    created: "2023-11-04T20:01:12.769852345Z"
+    appVersion: 6.6.0
+    created: "2023-11-05T15:30:51.685094871Z"
     description: A frontend angular app for real estate project
-    digest: 90279e8535b375ac93c11044fd30a94d9a247ad08133c239e11a3e0b161e2480
+    digest: ef461d5ad5f2447270d44fd3bef6639f3791a6250de54f146d4a931ebed2837b
     name: el-front-management
     type: application
     urls:
-    - https://bibou6.github.io/chartmuseum/el-front-management-6.5.9.tgz
-    version: 6.5.9
+    - https://bibou6.github.io/chartmuseum/el-front-management-6.6.0.tgz
+    version: 6.6.0
   postgresql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 14.2.0
-    created: "2023-11-04T20:01:12.77637548Z"
+    created: "2023-11-05T15:30:51.689490336Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +35,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 65540e373f8270b5c615e029fb1d04cd0f6ef8c5f580ac1bf462ae8119c6257e
+    digest: 0235b2cd666f0364497bdfafb96b99fb3c104e858b9024edfd4aae15e2490ce8
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -59,40 +59,40 @@ entries:
     version: 11.2.0
   real-estate:
   - apiVersion: v2
-    created: "2023-11-04T20:01:12.782654198Z"
+    created: "2023-11-05T15:30:51.696871546Z"
     dependencies:
     - condition: real-estate-engine.enabled
       name: real-estate-engine
       repository: file://../real-estate-engine
-      version: 5.5.9
+      version: 5.6.0
     - condition: el-front-management.enabled
       name: el-front-management
       repository: file://../el-front-management
-      version: 6.5.9
+      version: 6.6.0
     - condition: el-front-guides.enabled
       name: el-front-guides
       repository: file://../el-front-guides
-      version: 6.5.9
+      version: 6.6.0
     - condition: postgresql.enabled
       name: postgresql
       repository: file://../postgresql
       version: 11.2.0
     description: A Helm chart to deploy them all
-    digest: 419611de8bfc7b38eda68b4540c1a9948416cf1ee8b1a702a172071d66dd5317
+    digest: efe9e454bd0bf4d495c40ff87b9b20b05e9f5c95f1e4b8bcf33cd133b1b8764e
     name: real-estate
     type: application
     urls:
-    - https://bibou6.github.io/chartmuseum/real-estate-5.5.9.tgz
-    version: 5.5.9
+    - https://bibou6.github.io/chartmuseum/real-estate-5.6.0.tgz
+    version: 5.6.0
   real-estate-engine:
   - apiVersion: v2
-    appVersion: 5.5.9
-    created: "2023-11-04T20:01:12.783246338Z"
+    appVersion: 5.6.0
+    created: "2023-11-05T15:30:51.697393654Z"
     description: A Helm chart for Kubernetes
-    digest: fad595fd528fc8b51a9a89486c727cc10aae09fe6720b5aafdc85b3cf1061ba7
+    digest: fedb63fb9dcca8eaabab6816068a6507af8460a1e1c099a1010a41c28ac0b73d
     name: real-estate-engine
     type: application
     urls:
-    - https://bibou6.github.io/chartmuseum/real-estate-engine-5.5.9.tgz
-    version: 5.5.9
-generated: "2023-11-04T20:01:12.768634063Z"
+    - https://bibou6.github.io/chartmuseum/real-estate-engine-5.6.0.tgz
+    version: 5.6.0
+generated: "2023-11-05T15:30:51.682456131Z"
